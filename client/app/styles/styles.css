@@ -1,0 +1,343 @@
+@import url(/Users/samw/Desktop/BandMap test/client/app/styles/vendor/normalize.css);
+@import url("https://fonts.googleapis.com/css?family=Syncopate");
+@media only screen and (min-width: 768px) {
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* background-color: #c0c0c0; */
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 16px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #all {
+    text-align: center;
+    opacity: 0.9;
+  }
+  .title {
+    font-family: 'Syncopate', sans-serif;
+    margin-top: 30px;
+    font-size: 50px;
+    text-shadow: gray;
+    margin-bottom: 5px;
+  }
+  #login-box {
+    position: relative;
+    margin: 5% auto;
+    height: 400px;
+    width: 600px;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    margin-top: 0px;
+  }
+  .left-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  input[type="text-center"],
+  input[type="password-center"] {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    -webkit-transition: 0.9s ease;
+    transition: 0.9s ease;
+  }
+  button.signup-button {
+    margin-bottom: 28px;
+    width: 120px;
+    height: 32px;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition: 0.9s ease;
+    transition: 0.9s ease;
+    cursor: pointer;
+  }
+  button.signup-button :hover,
+  button.signup-button :focus {
+    background-color: black;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .right-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    background-color: #adadad;
+    /* background-image: url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        background-size: cover;
+        background-position: center; */
+    padding-top: 100px;
+  }
+  .or {
+    position: absolute;
+    top: 180px;
+    left: 280px;
+    width: 40px;
+    height: 40px;
+    background: #efefef;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .right-box .signInWith {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  button.social {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 220px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    -webkit-transition: 0.9s ease;
+    transition: 0.9s ease;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .facebook {
+    background: #32508e;
+  }
+  .twitter {
+    background: #55acee;
+  }
+  .google {
+    background: #dd4b39;
+  }
+  .bandsInTown {
+    background: #259998;
+  }
+  h1 {
+    font-family: 'Syncopate', sans-serif;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 0px;
+    visibility: hidden;
+  }
+  p {
+    margin-top: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  a {
+    color: #f44336;
+    margin-left: 5px;
+  }
+  h5 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin-bottom: 0px;
+    text-align: left;
+    margin-top: 0px;
+    color: #707070;
+  }
+  ::-webkit-input-placeholder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  :-ms-input-placeholder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  ::-ms-input-placeholder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  ::placeholder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  #signUp {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  hr {
+    visibility: hidden;
+  }
+}
+
+/*===================================================================================*/
+/*===================================================================================*/
+/*===================================================================================*/
+@media only screen and (max-width: 767px) {
+  body {
+    background: #efefef;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  h1 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  h5 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 200px;
+    line-height: 20px;
+    color: #707070;
+  }
+  p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  #all {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  #login-box {
+    text-align: center;
+  }
+  .left-box {
+    text-align: center;
+    padding-top: 5px;
+  }
+  input[type="text-center"],
+  input[type="password-center"] {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    -webkit-transition: 0.9s ease;
+    transition: 0.9s ease;
+    background: white;
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 30px;
+    opacity: 0.8;
+  }
+  button.signup-button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 32px;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: 0.9s ease;
+    transition: 0.9s ease;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  ::-webkit-input-placeholder {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  :-ms-input-placeholder {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  ::-ms-input-placeholder {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  ::placeholder {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .signInWith {
+    visibility: hidden;
+    font-size: 0px;
+  }
+  .or {
+    visibility: hidden;
+  }
+  .facebook {
+    background: #32508e;
+  }
+  .twitter {
+    background: #55acee;
+  }
+  .google {
+    background: #dd4b39;
+  }
+  .bandsInTown {
+    background: #259998;
+  }
+  button.social {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 220px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    -webkit-transition: 0.9s ease;
+    transition: 0.9s ease;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .right-box {
+    text-align: center;
+    top: 0;
+    right: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  a {
+    color: #f44336;
+    margin-left: 5px;
+  }
+  .title {
+    visibility: hidden;
+    font-size: 0px;
+  }
+  hr {
+    background-color: black;
+    border: none;
+    height: 2px;
+    width: 75%;
+    margin-bottom: 15px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

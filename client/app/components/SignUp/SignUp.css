@@ -1,18 +1,14 @@
-@charset "UTF-8";
-
-@import 'vendor/normalize';
-
 @import url("https://fonts.googleapis.com/css?family=Syncopate");
 
 @media only screen and (min-width: 768px){
- 
+
     body{
         height: 100%;
         width: 100%;
         margin: 0;
         padding: 0;
         /* background-color: #c0c0c0; */
-        //background-image: url("../components/SignUp/Images/Background.jpg");
+        background-image: url("./Images/Background.jpg");
         background-size: 100% 100%;
         background-position: center;
         background-attachment: fixed;
@@ -97,9 +93,9 @@
         width: 300px;
         height: 400px;
         background-color: rgb(173, 173, 173);
-        background-image: url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        /* background-image: url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
         background-size: cover;
-        background-position: center; 
+        background-position: center; */
         padding-top: 100px;
     }
     .or{
@@ -124,44 +120,6 @@
         text-align: center;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-
-    .left-box{
-        position: absolute;
-        top: 0;
-        right: 0;
-        box-sizing: border-box ;
-        padding: 40px;
-        width: 300px;
-        height: 400px;
-        background-color: rgb(173, 173, 173);
-        background-image: url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-        background-size: cover;
-        background-position: center; 
-        padding-top: 100px;
-    }
-    .or{
-        position: absolute;
-        top: 180px;
-        left: 280px;
-        width: 40px;
-        height: 40px;
-        background: #efefef;
-        border-radius: 50%;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.6);
-        text-align: center;
-        line-height: 40px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    }
-    .right-box .signInWith
-    {
-        display: block;
-        margin-bottom: 40px;
-        font-size: 20px;
-        color: black;
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
     button.social
     {
         margin-top: 5px;
@@ -257,7 +215,7 @@
     #all{
         width: 100%;
         height: 100%;
-       // background-image: url("./Images/Background.jpg");
+        background-image: url("./Images/Background.jpg");
         background-size: cover;
         background-position: center;
     }
