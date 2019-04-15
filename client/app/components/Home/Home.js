@@ -309,6 +309,11 @@ class Home extends Component {
             /><br />
             <button onClick={this.onSignUp}>Sign Up</button>
           </div>
+          
+          <div> <div className="or">OR sign in with Spotify</div>
+             {/* <button onClick={() => window.location = 'localhost:8080' } className= "social spotify">Login With Spotify</button> */}
+             <button onClick={() => window.location = 'https://bandmap-backend.herokuapp.com/login' } className= "social spotify">Login With Spotify</button>
+         </div>
          
         </div>
       );
