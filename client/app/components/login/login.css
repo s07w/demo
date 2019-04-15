@@ -1,18 +1,14 @@
-@charset "UTF-8";
-
-@import 'vendor/normalize';
-
 @import url("https://fonts.googleapis.com/css?family=Syncopate");
 
 @media only screen and (min-width: 768px){
- 
+
     body{
         height: 100%;
         width: 100%;
         margin: 0;
         padding: 0;
         /* background-color: #c0c0c0; */
-        //background-image: url("../components/SignUp/Images/Background.jpg");
+        background-image: url("./Images/Background.jpg");
         background-size: 100% 100%;
         background-position: center;
         background-attachment: fixed;
@@ -48,7 +44,7 @@
         padding: 20px;
         width: 300px;
         height: 400px;
-        padding-top: 0px;
+        padding-top: 5px;
         margin-top: 0px;
     }
     input[type="text-center"],
@@ -75,7 +71,7 @@
         background: black;
         border: none;
         border-radius: 5px;
-        color: #fff;
+        color: white;
         font-family: 'Syncopate', sans-serif;
         font-weight: 600;
         text-transform: uppercase;
@@ -85,7 +81,7 @@
     button.signup-button :hover,
     button.signup-button :focus
     {
-        background-color: black;
+        background: #ff5722;
         transition: 0.2s ease;
     }
     .right-box{
@@ -97,10 +93,10 @@
         width: 300px;
         height: 400px;
         background-color: rgb(173, 173, 173);
-        background-image: url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        /* background-image: url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
         background-size: cover;
-        background-position: center; 
-        padding-top: 100px;
+        background-position: center; */
+        padding-top: 100px; 
     }
     .or{
         position: absolute;
@@ -124,44 +120,6 @@
         text-align: center;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-
-    .left-box{
-        position: absolute;
-        top: 0;
-        right: 0;
-        box-sizing: border-box ;
-        padding: 40px;
-        width: 300px;
-        height: 400px;
-        background-color: rgb(173, 173, 173);
-        background-image: url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-        background-size: cover;
-        background-position: center; 
-        padding-top: 100px;
-    }
-    .or{
-        position: absolute;
-        top: 180px;
-        left: 280px;
-        width: 40px;
-        height: 40px;
-        background: #efefef;
-        border-radius: 50%;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.6);
-        text-align: center;
-        line-height: 40px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    }
-    .right-box .signInWith
-    {
-        display: block;
-        margin-bottom: 40px;
-        font-size: 20px;
-        color: black;
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
     button.social
     {
         margin-top: 5px;
@@ -175,10 +133,11 @@
         font-weight: 600;
         transition: 0.9s ease;
         cursor: pointer;
-        font-size: 15px; 
+        font-size: 15px;  
     }
     .facebook{
         background: #32508e;
+       
         
     }
     .twitter{
@@ -201,7 +160,6 @@
     p{
         margin-top: 0px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
     }
     a{
         color: #f44336;
@@ -209,7 +167,7 @@
     }
     h5{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 18px;
+        font-size: 24px;
         margin-bottom: 0px;
         text-align: left;
         margin-top:0px;
@@ -220,11 +178,14 @@
     }
     #signUp{
         margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 12px;
+        padding-bottom: 20px;
     }
     hr{
         visibility: hidden
     }
+    
+   
 }
 
 /*===================================================================================*/
@@ -237,13 +198,21 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     h1{
+        margin-top: 10px;
         font-family: 'Syncopate', sans-serif;
         font-size: 35px;
+        margin-bottom: 5px;
+    }
+    hr {
+        background-color: black;
+        border: none;
+        height: 2px;
+        width: 75%;
         margin-bottom: 15px;
     }
     h5{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin-bottom: 0px;
+        margin-bottom: 2px;
         margin-top: 0px;
         font-size: 18px;
         font-weight: 200px;
@@ -252,18 +221,20 @@
     }
     p{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
     }
     #all{
         width: 100%;
         height: 100%;
-       // background-image: url("./Images/Background.jpg");
+        background-image:  url("./Images/Background.jpg");
         background-size: cover;
         background-position: center;
     }
     #login-box{
         text-align: center;
-        
+        padding-bottom: 60px;
+    }
+    #signUp{
+        padding-bottom: 10px;
     }
     .left-box{
         text-align: center;
@@ -271,7 +242,6 @@
     }
     input[type="text-center"],
     input[type="password-center"]{
-       
         box-sizing: border-box;
         border: none;
         outline: none;
@@ -285,8 +255,9 @@
         margin-top: 20px;
         border-radius: 5px;
         height: 30px;
+        opacity: 0.9;
+        margin-bottom: 5px;
         opacity: 0.8;
-    
     }
     button.signup-button{
         margin-top:10px;
@@ -298,12 +269,12 @@
         border-radius: 5px;
         color: #fff;
         font-family:'Syncopate', sans-serif;
-        font-weight: 700;
+        font-weight: 500;
         text-transform: uppercase;
         transition: 0.9s ease;
         cursor: pointer;
         font-size: 12px;
-    }   
+    }
     ::placeholder{
         color: black;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
@@ -324,6 +295,7 @@
     }
     .google{
         background: #dd4b39;
+        
     }
     .bandsInTown{
         background: #259998;
@@ -341,11 +313,11 @@
         transition: 0.9s ease;
         cursor: pointer;
         font-size: 15px;
-        
     }
     .right-box{
         text-align: center;
-        top: 0;
+        margin-top: 25px;
+        padding-top: 25px;
         right: 0;
         box-sizing: border-box ;
     } 
@@ -356,13 +328,6 @@
     .title{
         visibility: hidden;
         font-size:0px;
-    }
-    hr {
-        background-color: black;
-        border: none;
-        height: 2px;
-        width: 75%;
-        margin-bottom: 15px;
     }
 
 }
