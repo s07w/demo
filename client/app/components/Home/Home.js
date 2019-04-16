@@ -7,6 +7,7 @@ import {
 // import "../SignUp/SignUp.css";
 // import "../login.css";
 import AboutCard from '../AboutCard/AboutCard';
+import MyMapComponent from "../MyMapComponent/MyMapComponent";
 
 
 class Home extends Component {
@@ -323,7 +324,7 @@ class Home extends Component {
     // This would be where we'd put the map component
     return (
       <div>
-        <AboutCard />
+        <MyMapComponent />
         <button onClick={this.logout}>Logout</button>
       </div>
     );
