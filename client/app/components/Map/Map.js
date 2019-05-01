@@ -3,6 +3,10 @@
 import React from 'react'
 import  { compose, withProps, lifecycle } from 'recompose'
 import {withScriptjs, withGoogleMap, GoogleMap, DirectionsRenderer} from 'react-google-maps'
+import Card from "../Card/index"
+import { List } from "../List/index"
+import Event from "../Event/index"
+
 
 class Map extends React.Component {
 
@@ -55,6 +59,7 @@ class Map extends React.Component {
     render() {
         const DirectionsComponent = compose(
           withProps({
+            shows: this.props.shows,
             stops: this.props.stops,
             origin: this.props.origin,
             destLat: this.props.destLat,
@@ -62,7 +67,7 @@ class Map extends React.Component {
             googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBnYQSBwhAq7HKVX5bjFXtsOFsOXLiTSfI",
             loadingElement: <div style={{ height: `400px` }} />,
             containerElement: <div style={{ width: `100%` }} />,
-            mapElement: <div style={{height: `600px`, width: `600px` }}  />,
+            mapElement: <div style={{height: `600px`, width: `600px` }}  />
           }),
           withScriptjs,
           withGoogleMap,
@@ -98,8 +103,36 @@ class Map extends React.Component {
           </GoogleMap>
         );
     return (
+        <div>
             <DirectionsComponent
             />
+            <Card>
+              {this.props.shows.length ? (
+                  <List>
+                    {this.props.shows.map(show => (
+                      <Event
+                        key={show._id}
+                        artist={show.artist}
+                        location={show.location}
+                        date={show.datetime}
+                        Button={() => (
+                          <button
+                            onClick={() => this.handleBookDelete(show._id)}
+                            className="btn btn-danger ml-2"
+                          >
+                            Delete
+                          </button>
+                        )}
+                      />
+                    ))}
+                  </List>
+                ) : (
+                  <h2 className="text-center">No Events</h2>
+                )}
+              {/* <p>all the events</p> */}
+              {/* {this.props.shows} */}
+            </Card>
+        </div>
         )
       }
     }

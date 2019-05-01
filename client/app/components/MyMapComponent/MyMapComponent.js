@@ -18,7 +18,8 @@ class MyMapComponent extends React.Component {
         error: "",
         origin: "",
         destLat: "",
-        destLng: ""
+        destLng: "",
+        shows: []
       };
        
     componentDidMount() {
@@ -61,7 +62,7 @@ class MyMapComponent extends React.Component {
               datetime: moment(res.data[i].datetime).format("YYYY-MM-DD"),
               longitude: res.data[i].venue.longitude,
               latitude: res.data[i].venue.latitude,
-              location: res.data[i].venue.name + ", " + res.data[i].venue.city
+              location: res.data[i].venue.name + ", " + res.data[i].venue.city + ", " + res.data[i].venue.region
             });
           };
         })
@@ -108,6 +109,7 @@ class MyMapComponent extends React.Component {
           }
         }
         console.log(shows);
+        this.setState({shows: shows});
         this.setState({results: venues}); // route venues sent to make map
         this.setState({destLat: shows[shows.length-1].latitude});
         this.setState({destLng: shows[shows.length-1].longitude});
@@ -132,6 +134,7 @@ class MyMapComponent extends React.Component {
           stops={this.state.results}
           destLat={this.state.destLat}
           destLng={this.state.destLng}
+          shows={this.state.shows}
         />
         </div>
         )
