@@ -8,6 +8,7 @@ import { compose, withProps, lifecycle } from 'recompose'
 import {withScriptjs, withGoogleMap, GoogleMap, DirectionsRenderer} from 'react-google-maps'
 import moment from "moment";
 import withBands from "../../hocs/withBands"
+// import Logo from '../Logo/index'
 
 class MyMapComponent extends React.Component {
     state = {
@@ -122,14 +123,16 @@ class MyMapComponent extends React.Component {
     render() {
         
     return (
-        <div>
-        <SearchForm 
+        
+        <div style={{width:'100%'}}>
+        {/* <Logo></Logo> */}
+        <SearchForm
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
           // venues={this.state.venues}
           breeds={this.state.breeds}
         />
-        <Map
+        <Map 
           origin={this.state.search}
           stops={this.state.results}
           destLat={this.state.destLat}
