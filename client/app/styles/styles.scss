@@ -12,7 +12,7 @@
         margin: 0;
         padding: 0;
         /* background-color: #c0c0c0; */
-        //background-image: url("../components/SignUp/Images/Background.jpg");
+        background-image: url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
         background-size: 100% 100%;
         background-position: center;
         background-attachment: fixed;
@@ -24,6 +24,7 @@
         text-align: center;
         opacity: 0.9
     }
+    
     .title{
         font-family: 'Syncopate', sans-serif;
         margin-top: 30px;
@@ -34,25 +35,22 @@
     #login-box{
         position: relative;
         margin: 5% auto;
-        height: 400px;
+        height: 1px;
         width: 600px;
-        background: #fff;
+        background: black;
         box-shadow: 0 2px 4px rgba(0,0,0,0.6);
         margin-top: 0px;
     }
     .left-box{
         position: absolute;
-        top: 0;
         left: 0;
         box-sizing: border-box;
         padding: 20px;
-        width: 300px;
-        height: 400px;
-        padding-top: 0px;
-        margin-top: 0px;
+        padding-top: 30px;
+        margin-top: 20px;
     }
-    input[type="text-center"],
-    input[type="password-center"]
+    input[type="email"],
+    input[type="password"]
     {
         display:block;
         box-sizing: border-box;
@@ -67,7 +65,22 @@
         font-size: 15px;
         transition: 0.9s ease;
     }
-    button.signup-button
+    input[type="text"]
+    {
+        display:block;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding: 4px;
+        width: 220px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #aaa;
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        transition: 0.9s ease;
+    }
+    button
     {
         margin-bottom: 28px;
         width:   120px;
@@ -94,27 +107,10 @@
         right: 0;
         box-sizing: border-box ;
         padding: 40px;
-        width: 300px;
-        height: 400px;
-        background-color: rgb(173, 173, 173);
-        background-image: url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
         background-size: cover;
         background-position: center; 
-        padding-top: 100px;
     }
-    .or{
-        position: absolute;
-        top: 180px;
-        left: 280px;
-        width: 40px;
-        height: 40px;
-        background: #efefef;
-        border-radius: 50%;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.6);
-        text-align: center;
-        line-height: 40px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    }
+    
     .right-box .signInWith
     {
         display: block;
@@ -125,33 +121,7 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
-    .left-box{
-        position: absolute;
-        top: 0;
-        right: 0;
-        box-sizing: border-box ;
-        padding: 40px;
-        width: 300px;
-        height: 400px;
-        background-color: rgb(173, 173, 173);
-        background-image: url("https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-        background-size: cover;
-        background-position: center; 
-        padding-top: 100px;
-    }
-    .or{
-        position: absolute;
-        top: 180px;
-        left: 280px;
-        width: 40px;
-        height: 40px;
-        background: #efefef;
-        border-radius: 50%;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.6);
-        text-align: center;
-        line-height: 40px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    }
+    
     .right-box .signInWith
     {
         display: block;
@@ -210,8 +180,8 @@
     h5{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 18px;
-        margin-bottom: 0px;
-        text-align: left;
+        margin-bottom: 10px;
+        text-align: center;
         margin-top:0px;
         color: rgb(112, 112, 112);
     }
@@ -257,37 +227,19 @@
     #all{
         width: 100%;
         height: 100%;
-       // background-image: url("./Images/Background.jpg");
         background-size: cover;
         background-position: center;
     }
     #login-box{
         text-align: center;
         
+        
     }
     .left-box{
         text-align: center;
         padding-top: 5px;
     }
-    input[type="text-center"],
-    input[type="password-center"]{
-       
-        box-sizing: border-box;
-        border: none;
-        outline: none;
-        border-bottom: 1px solid #aaa;
-        font-family: sans-serif;
-        font-weight: 400;
-        font-size: 15px;
-        transition: 0.9s ease;
-        background: white;
-        width: 250px;
-        margin-top: 20px;
-        border-radius: 5px;
-        height: 30px;
-        opacity: 0.8;
     
-    }
     button.signup-button{
         margin-top:10px;
         margin-bottom: 5px;
@@ -347,7 +299,7 @@
         text-align: center;
         top: 0;
         right: 0;
-        box-sizing: border-box ;
+        
     } 
     a{
         color: #f44336;

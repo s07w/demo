@@ -240,8 +240,9 @@ class Home extends Component {
       return (
         <div id="all">
         <h2 className = "title">Chordinate</h2>
+        <div className = "logo"></div>
           <div id="login-box">
-          <div id="left-box">
+          <div className="left-box">
             {
               (signInError) ? (
                 <p>{signInError}</p>
@@ -249,9 +250,7 @@ class Home extends Component {
             }
             <div className="signUp">
             <h1>Chordinate</h1>
-            <hr></hr>
-            <h5>Discover Live Music</h5>
-            <h5>Without Ever Getting Lost</h5>
+          
             <p>Sign In</p>
             <input 
               type="email" 
@@ -279,10 +278,8 @@ class Home extends Component {
                 ) : (null)
               }
             </div>
-            </div>
-             
-         
-          <div className="right-box">
+
+            <div className="right-box">
             <p>Sign Up</p>
             <input 
             type="text" 
@@ -310,11 +307,14 @@ class Home extends Component {
             /><br />
             <button onClick={this.onSignUp}>Sign Up</button>
           </div>
+
+
+            </div>
+             
+         
           
-          <div> <div className="or">OR sign in with Spotify</div>
-             {/* <button onClick={() => window.location = 'localhost:8080' } className= "social spotify">Login With Spotify</button> */}
-             <button onClick={() => window.location = 'https://bandmap-backend.herokuapp.com/login' } className= "social spotify">Login With Spotify</button>
-         </div>
+          
+       
          
         </div>
       );
