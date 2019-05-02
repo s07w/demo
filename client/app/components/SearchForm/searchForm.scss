@@ -4,11 +4,16 @@
 input{
     height: 25px;
     border:black 1px solid;
-    border-radius: 3px
+    border-radius: 3px;
+    text-align: center;
   
 }
 label{
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
-
+.form-control{
+    text-align: center;
+    margin-left: 41%;
+    
+}
