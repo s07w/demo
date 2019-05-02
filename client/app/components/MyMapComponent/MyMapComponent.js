@@ -8,7 +8,7 @@ import { compose, withProps, lifecycle } from 'recompose'
 import {withScriptjs, withGoogleMap, GoogleMap, DirectionsRenderer} from 'react-google-maps'
 import moment from "moment";
 import withBands from "../../hocs/withBands"
-// import Logo from '../Logo/index'
+
 
 class MyMapComponent extends React.Component {
     state = {
@@ -125,7 +125,6 @@ class MyMapComponent extends React.Component {
     return (
         
         <div style={{width:'100%'}}>
-        {/* <Logo></Logo> */}
         <SearchForm
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
@@ -139,6 +138,7 @@ class MyMapComponent extends React.Component {
           destLng={this.state.destLng}
           shows={this.state.shows}
         />
+        
         </div>
         )
     }

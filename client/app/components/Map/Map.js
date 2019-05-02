@@ -68,7 +68,7 @@ class Map extends React.Component {
             googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBnYQSBwhAq7HKVX5bjFXtsOFsOXLiTSfI",
             loadingElement: <div style={{ height: `400px` }} />,
             containerElement: <div style={{ width: `100%` }} />,
-            mapElement: <div style={{height: `700px`, width: `100%`, border:'black solid 2px'}}  />
+            mapElement: <div style={{height: `700px`, width: `85%`, border:'black solid 2px', marginLeft:'100px', borderRadius:'10px'}}  />
           }),
           withScriptjs,
           withGoogleMap,
