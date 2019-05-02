@@ -6,6 +6,7 @@ import {withScriptjs, withGoogleMap, GoogleMap, DirectionsRenderer} from 'react-
 import Card from "../Card/index"
 import { List } from "../List/index"
 import Event from "../Event/index"
+import "../Map/map.scss"
 
 
 class Map extends React.Component {
@@ -67,7 +68,7 @@ class Map extends React.Component {
             googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBnYQSBwhAq7HKVX5bjFXtsOFsOXLiTSfI",
             loadingElement: <div style={{ height: `400px` }} />,
             containerElement: <div style={{ width: `100%` }} />,
-            mapElement: <div style={{height: `600px`, width: `600px` }}  />
+            mapElement: <div style={{height: `700px`, width: `100%`, border:'black solid 2px'}}  />
           }),
           withScriptjs,
           withGoogleMap,
@@ -127,7 +128,7 @@ class Map extends React.Component {
                     ))}
                   </List>
                 ) : (
-                  <h2 className="text-center">No Events</h2>
+                  <h2 className="text-center">Search a destination above to see who's playing below!</h2>
                 )}
               {/* <p>all the events</p> */}
               {/* {this.props.shows} */}

@@ -8,6 +8,7 @@ import {
 // import "../login.css";
 import AboutCard from '../AboutCard/AboutCard';
 import MyMapComponent from "../MyMapComponent/MyMapComponent";
+import "../Home/Home.scss"
 
 
 class Home extends Component {
